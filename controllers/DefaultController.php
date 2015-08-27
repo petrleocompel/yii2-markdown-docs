@@ -1,6 +1,6 @@
 <?php
 
-namespace jhancock\markdowndocs;
+namespace jhancock\markdowndocs\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -16,7 +16,6 @@ class DefaultController extends Controller
 
     public function actionView($page)
     {
-        $is_dir = false;
         if(preg_match('/\.\./', $page)) {
             throw new ForbiddenHttpException('Access to this document is forbidden');
         }
@@ -25,7 +24,6 @@ class DefaultController extends Controller
         if(is_dir($file)) {
             if(is_file("$file/index.md")) {
                 $file = "$file/index.md";
-                $is_dir = true;
             }
         }
 
@@ -35,7 +33,6 @@ class DefaultController extends Controller
 
         return $this->render('view', [
             'file'   => $file,
-            'is_dir' => $is_dir,
         ]);
     }
 }

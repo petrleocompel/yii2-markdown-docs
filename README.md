@@ -20,4 +20,36 @@ to the require section of your `composer.json` file.
 
 ## Configuration
 
-TBD
+Enable the module in your confguration:
+
+```
+'modules' => [
+    'docs' => [
+        'class' => 'jhancock\markdowndocs\Module',
+    ],
+],
+```
+
+Add a rule to your url manager component:
+
+```
+'urlManager' => [
+    'enablePrettyUrl' => true,
+    'showScriptName'  => false,
+    'rules' => [
+        ...
+        [
+            'pattern'      => 'docs<page:.+>',
+            'route'        => 'docs/default/view',
+            'encodeParams' => false
+        ],
+        ...
+    ],
+],
+```
+
+Your documentation would then be accessible under your application's `/docs` URL.
+
+## Usage
+
+This module assumes your documentation lives under the `@app/docs` alias.
