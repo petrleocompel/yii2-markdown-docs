@@ -26,6 +26,8 @@ Enable the module in your confguration:
 'modules' => [
     'docs' => [
         'class' => 'jhancock\markdowndocs\Module',
+        // Optional, defaults to cebe\markdown\GithubMarkdown
+        'parserClass' => 'cebe\markdown\GithubMarkdown'
     ],
 ],
 ```

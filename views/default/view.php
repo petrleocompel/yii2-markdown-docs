@@ -6,6 +6,8 @@ use yii\helpers\Html;
 /* @var $file string */
 
 $meta = [];
+$parserClass = jhancock\markdowndocs\Module::getInstance()->parserClass;
+$parser = new $parserClass;
 
 if(is_file($file)) {
     $stop = 1;
@@ -80,7 +82,6 @@ for($i=0; $i<count($pieces) - $stop; $i++) {
 $this->title = isset($meta['Title']) ? $meta['Title'] : 'unknown title';
 $this->params['breadcrumbs'][] = $this->title;
 
-$parser = new \cebe\markdown\GithubMarkdown();
 
 ?>
 <div class="doc-view">
