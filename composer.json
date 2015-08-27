@@ -1,0 +1,27 @@
+{
+    "name": "jhancock/yii2-markdown-docs",
+    "description": "Yii2 markdown documentation module",
+    "homepage": "https://github.com/jasonhancock/yii2-markdown-docs",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "markdown", "module"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Jason Hancock",
+            "email": "jason@jasonhancock.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/jasonhancock/yii2-markdown-docs/issues",
+        "source": "https://github.com/jasonhancock/yii2-markdown-docs"
+    },
+    "autoload": {
+        "psr-4" : {
+            "jhancock\\markdowndocs\\" : ""
+        }
+    },
+    "require": {
+        "yiisoft/yii2": "*"
+    }
+}
