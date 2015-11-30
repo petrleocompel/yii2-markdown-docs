@@ -9,6 +9,11 @@ Either run
 ```
 php composer.phar require --prefer-dist petrleocompel/yii2-markdown-docs "*"
 ```
+or run
+
+```
+composer require petrleocompel/yii2-markdown-docs
+```
 
 or add
 
@@ -25,7 +30,7 @@ Enable the module in your confguration:
 ```
 'modules' => [
     'docs' => [
-        'class' => 'petrleocompel\markdowndocs\Module',
+        'class' => 'petrleocompel\yii2\markdowndocs\Module',
         // You can set custom parserClass
         //'parserClass' => 'cebe\markdown\GithubMarkdown'
     ],
@@ -56,5 +61,8 @@ Your documentation would then be accessible under your application's `/docs` URL
 
 This module assumes your documentation lives under the `@app/docs` alias.
 
-### Title of doc
-On first line of every doc should by `#` means Heading 1
+### Make doc
+Under `@app/docs` you should make your md files. You dont have to create listing its automatic.
+
+#### Titles of doc
+On every 1 line of file should be `#` means Heading 1
