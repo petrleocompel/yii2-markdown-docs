@@ -1,5 +1,5 @@
-Copyright (c) 2015 Jason Hancock
-<http://jasonhancock.com/>
+Copyright (c) 2015 Petr Leo Compel
+<http://peelco.cz/>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

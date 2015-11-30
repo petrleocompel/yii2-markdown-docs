@@ -1,4 +1,4 @@
-# yii2-markdown-docs
+# Yii2 Markdown docs
 
 ## Installation
 
@@ -7,13 +7,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist jhancock/yii2-markdown-docs "*"
+php composer.phar require --prefer-dist petrleocompel/yii2-markdown-docs "*"
 ```
 
 or add
 
 ```
-"jhancock/yii2-markdown-docs": "*"
+"petrleocompel/yii2-markdown-docs": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -25,9 +25,9 @@ Enable the module in your confguration:
 ```
 'modules' => [
     'docs' => [
-        'class' => 'jhancock\markdowndocs\Module',
-        // Optional, defaults to cebe\markdown\GithubMarkdown
-        'parserClass' => 'cebe\markdown\GithubMarkdown'
+        'class' => 'petrleocompel\markdowndocs\Module',
+        // You can set custom parserClass
+        //'parserClass' => 'cebe\markdown\GithubMarkdown'
     ],
 ],
 ```
@@ -55,3 +55,6 @@ Your documentation would then be accessible under your application's `/docs` URL
 ## Usage
 
 This module assumes your documentation lives under the `@app/docs` alias.
+
+### Title of doc
+On first line of every doc should by `#` means Heading 1

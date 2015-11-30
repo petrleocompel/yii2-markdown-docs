@@ -1,27 +1,37 @@
 {
-    "name": "jhancock/yii2-markdown-docs",
+    "name": "petrleocompel/yii2-markdown-docs",
     "description": "Yii2 markdown documentation module",
-    "homepage": "https://github.com/jasonhancock/yii2-markdown-docs",
+    "homepage": "https://github.com/petrleocompel/yii2-markdown-docs",
     "type": "yii2-extension",
-    "keywords": ["yii2", "markdown", "module"],
+    "keywords": [
+        "yii2",
+        "markdown",
+        "module"
+    ],
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Jason Hancock",
-            "email": "jason@jasonhancock.com",
+            "name": "Petr Leo Compel",
+            "email": "petr.compel@futuretek.cz",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/jasonhancock/yii2-markdown-docs/issues",
-        "source": "https://github.com/jasonhancock/yii2-markdown-docs"
+        "issues": "https://github.com/petrleocompel/yii2-markdown-docs/issues",
+        "source": "https://github.com/petrleocompel/yii2-markdown-docs"
     },
     "autoload": {
         "psr-4" : {
-            "jhancock\\markdowndocs\\" : ""
+            "petrleocompel\\markdowndocs\\" : ""
         }
     },
     "require": {
-        "yiisoft/yii2": "*"
+        "php": ">=5.5.0",
+        "yiisoft/yii2": "2.0.*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
