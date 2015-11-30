@@ -9,7 +9,7 @@ use yii\helpers\Html;
 
 
 $meta = [];
-$parserClass = petrleocompel\markdowndocs\Module::getInstance()->parserClass;
+$parserClass = petrleocompel\yii2\markdowndocs\Module::getInstance()->parserClass;
 /** @var \cebe\markdown\GithubMarkdown $parser */
 $parser = new $parserClass;
 
