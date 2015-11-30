@@ -1,6 +1,6 @@
 <?php
 
-namespace petrleocompel\markdowndocs\controllers;
+namespace petrleocompel\yii2\markdowndocs\controllers;
 
 use Yii;
 use yii\base\InvalidParamException;
@@ -11,7 +11,7 @@ use yii\web\NotFoundHttpException;
 /**
  * Class DefaultController
  *
- * @package petrleocompel\markdowndocs\controllers
+ * @package petrleocompel\yii2\markdowndocs\controllers
  * @author    Petr Leo Compel <petr.compel@futuretek.cz>
  * @version   1.0.0
  */

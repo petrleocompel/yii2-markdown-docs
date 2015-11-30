@@ -1,11 +1,11 @@
 <?php
 
-namespace petrleocompel\markdowndocs;
+namespace petrleocompel\yii2\markdowndocs;
 
 /**
  * Class Module
  *
- * @package petrleocompel\markdowndocs
+ * @package petrleocompel\yii2\markdowndocs
  * @author    Petr Leo Compel <petr.compel@futuretek.cz>
  * @version   1.0.0
  */

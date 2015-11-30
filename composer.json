@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4" : {
-            "petrleocompel\\markdowndocs\\" : ""
+            "petrleocompel\\yii2\\markdowndocs\\" : ""
         }
     },
     "require": {
