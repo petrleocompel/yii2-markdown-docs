@@ -74,8 +74,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="doc-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <div class="markdown-doc">
         <?= $parser->parse($markdown); ?>
     </div>
