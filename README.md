@@ -37,6 +37,8 @@ Enable the module in your confguration:
 ],
 ```
 
+### Routing
+
 Add a rule to your url manager component:
 
 ```
@@ -46,8 +48,8 @@ Add a rule to your url manager component:
     'rules' => [
         ...
         [
-            'pattern'      => 'docs<page:.+>',
-            'route'        => 'docs/default/view',
+            'pattern'      => 'doc<page:.+>',
+            'route'        => 'doc/default/view',
             'encodeParams' => false
         ],
         ...
@@ -55,7 +57,11 @@ Add a rule to your url manager component:
 ],
 ```
 
-Your documentation would then be accessible under your application's `/docs` URL.
+Your documentation would then be accessible under your application's `/doc` URL.
+
+> You can change this url but if your `@app` is your `@webroot` then if you will change it to `/docs` there could be collision.
+ 
+So for compatibility i recommend to use `/doc`
 
 ## Usage
 
