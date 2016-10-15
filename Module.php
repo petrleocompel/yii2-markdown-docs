@@ -15,4 +15,9 @@ class Module extends \yii\base\Module
      * @var string
      */
     public $parserClass = 'cebe\markdown\GithubMarkdown';
+
+    /**
+     * @var bool if is set to true - it will skip rendering of 1 heading
+     */
+    public $skipFirstHeading = false;
 }

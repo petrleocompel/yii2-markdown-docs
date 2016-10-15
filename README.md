@@ -33,6 +33,7 @@ Enable the module in your confguration:
         'class' => 'petrleocompel\yii2\markdowndocs\Module',
         // You can set custom parserClass
         //'parserClass' => 'cebe\markdown\GithubMarkdown'
+        'skipFirstHeading' => false, // if you want to skip rendering of first heading
     ],
 ],
 ```

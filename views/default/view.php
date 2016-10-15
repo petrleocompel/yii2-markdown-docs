@@ -9,8 +9,12 @@ use yii\helpers\Html;
 
 
 $meta = [];
-$parserClass = petrleocompel\yii2\markdowndocs\Module::getInstance()->parserClass;
-/** @var \cebe\markdown\GithubMarkdown $parser */
+/** @var \petrleocompel\yii2\markdowndocs\Module $module */
+$module = petrleocompel\yii2\markdowndocs\Module::getInstance();
+/** @var bool $skipFirstHeading */
+$skipFirstHeading = $module->skipFirstHeading;
+    /** @var \cebe\markdown\GithubMarkdown $parser */
+$parserClass = $module->parserClass;
 $parser = new $parserClass;
 
 if (is_file($file)) {
@@ -19,6 +23,10 @@ if (is_file($file)) {
     $first_line = explode("\n", $markdown)[0];
     if ($first_line[0] === '#') {
         $meta['title'] = substr($first_line, 1);
+
+        if ($skipFirstHeading) {
+            $markdown = substr($markdown, strpos($markdown, "\n")+1);
+        }
     }
 
 } else {
